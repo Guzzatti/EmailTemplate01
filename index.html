@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma surpresa para você!</title>
+    <style>
+        /* Importando fontes */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        /* Reset básico */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #dddddd;
+        }
+
+        /* Estilos do cabeçalho */
+        .email-header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .email-header img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        /* Estilos do corpo */
+        .email-body {
+            text-align: left;
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h2 {
+            font-family: 'Mermaid', sans-serif;
+            font-size: 24px;
+            color: #8c6e39; /* Cor do título */
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.6;
+        }
+        .email-body .highlight {
+            font-family: 'Capetown Signature', sans-serif;
+            font-size: 20px;
+            color: #c19e5a; /* Cor do destaque */
+            display: block;
+            margin: 20px 0;
+        }
+
+        /* Botão de chamada para ação */
+        .cta-button {
+            display: block;
+            width: 100%;
+            max-width: 250px;
+            background-color: #e5bb6f; /* Cor do botão */
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin: 20px auto;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #c19e5a; /* Cor de hover do botão */
+        }
+
+        /* Rodapé */
+        .email-footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4d099; /* Cor de fundo do rodapé */
+            font-size: 12px;
+            color: #999999;
+        }
+
+        /* Dark mode - estilos adicionais */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #181818;
+                color: #ffffff;
+            }
+
+            .email-container {
+                background-color: #242424;
+                border-color: #444444;
+            }
+
+            .email-body h2 {
+                color: #e5bb6f; /* Alterando a cor do título no modo escuro */
+            }
+
+            .email-body p, .email-body .highlight {
+                color: #dddddd; /* Texto mais claro para o modo escuro */
+            }
+
+            .cta-button {
+                background-color: #c19e5a; /* Alterando a cor do botão para algo mais visível no modo escuro */
+                color: #ffffff;
+            }
+
+            .email-footer {
+                background-color: #333333;
+                color: #bbbbbb;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Cabeçalho do email com logo -->
+        <div class="email-header">
+            <img src="https://guzzatti.vteximg.com.br/arquivos/logo-guzzatti-nova.png?v=637830345275330000" alt="Guzzatti Logo">
+        </div>
+
+        <!-- Corpo do email -->
+        <div class="email-body">
+            <h2>Queremos saber de você!</h2>
+            <p>Olá, {{Nome do Cliente}},</p>
+            <p>A Guzzatti sempre busca oferecer o melhor para seus clientes, e por isso sua opinião é muito importante para nós. Queremos saber como foi sua experiência com nossos produtos e serviços, no final da pesquisa temos uma surpresa especial para você!</p>
+            
+            <!-- Chamada atrativa -->
+            <span class="highlight">Leva menos de 2 minutos!</span>
+
+            <!-- Botão de chamada para ação -->
+            <a href="https://www.seupesquisa.com" class="cta-button">Responda à Pesquisa</a>
+            
+            <p>Muito obrigado por nos ajudar a melhorar!</p>
+        </div>
+
+        <!-- Rodapé do email -->
+        <div class="email-footer">
+            <p>© 2024 Guzzatti. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>
